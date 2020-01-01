@@ -1,0 +1,23 @@
+﻿:root {
+    --x: screen.width;
+    --y: screen.height;
+}
+body {
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+#container {
+    width: var(--x);
+    height: var(--y);
+}
+
+#test {
+    font-family: 'Franklin Gothic Medium';
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%, -100%);
+}
