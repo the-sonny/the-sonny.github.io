@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The Most Accurate 8 Ball Ever</title>
+    <script src="8ball.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #ball, #innerball {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translateY(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translate(-50%, -100%);
+        }
+
+        #ball {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(0,0,0);
+            border-radius: 50%;
+        }
+
+        #innerball {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255,255,255);
+            border-radius: 50%;
+        }
+
+        #form {
+            position: relative;
+            margin: 0;
+            transform: translate(-0%, 300%);
+        }
+    </style>
+</head>
+<body>
+    <div id="ball">
+        <div id="innerball">
+            <h1 id="answered">8</h1>
+        </div>
+    </div>
+    <div id="form">
+            <h1>Question:</h1>
+            <input type="text" name="question" />
+            <br />
+            <div id="answer">
+                <button onclick="Answer()">Ask</button>
+            </div>
+    </div>
+</body>
+</html>
